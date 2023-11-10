@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Menuimg from "../images/menu.png";
 import { useGlobalState } from "./hooks";
 import cart from '../images/cart.png';

@@ -1,4 +1,5 @@
 import { useGlobalState } from "./hooks";
+import { Link } from "react-router-dom";
 import user from '../images/user.png';
 import favs from '../images/heart.png';
 import products from '../images/products.png';
@@ -12,26 +13,27 @@ export default function Menu() {
         <div id="menu" className={`menu-content ${Menu ? "visible" : "hidden"}`}>
             <h2 id="menutitle">Hola, Nicolas</h2>
             <ul>
-                <li>
+                <Link to={'/'}>
                     <img src={home} alt="Imagen de cuenta" />
                     Inicio
-                </li>
-                <li>
+
+                </Link>
+                <Link>
                     <img src={user} alt="Imagen de cuenta" />
                     Tu cuenta
-                </li>
-                <li>
+                </Link>
+                <Link>
                     <img src={favs} alt="Imagen de cuenta" />
                     Favoritos
-                </li>
-                <li>
+                </Link>
+                <Link>
                     <img src={glass} alt="Imagen de cuenta" />
                     Productos
-                </li>
-                <li>
+                </Link>
+                <Link>
                     <img src={contact} alt="Imagen de cuenta" />
                     Contacto
-                </li>
+                </Link>
             </ul>
         </div>
 
